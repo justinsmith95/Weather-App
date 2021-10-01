@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row display-6 text-center"></div>
+        <div class="row">
+            <div class="col">
+                    <input type="text" id="zipBox"></input>
+                zip code bar here
+            </div>
+            <div class="col">
+                <button id="submitButton"> Get Weather</button>
+            </div>
+            <div class="col">
+                <button id="testHideShow"> Working or not</button>
+            </div>
+        </div>
+        <div class="row" id="errorMsg"> Error Message Here</div>
+        <div class="row border border-danger">City</div>
+        <div class="row border border-danger" id="cityName"></div>
+        
+        <div class="row border border-dark">Temperature</div>
+        <div class="row">
+            <div class="col-4 border border-dark" id ="tempK">Kelvin</div>
+            <div class="col-4 border border-dark" id = "tempF">Farenheit</div>
+            <div class="col-4 border border-dark" id = "tempC">Celcius</div>
+        </div>
+        
+        <div class="row border border-dark">Condition</div>
+        <div class="row border border-dark" id="currentCondition">Light rain</div>
+
+        <div class="row border border-dark">Other Info</div>
+        <div class="row border border-dark">
+            <div class="card">
+                <img src="'link here'" class="card-img" id="conditionImg">
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+    <script src="./js/main.js"></script>
+</body>
