@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,44 +17,45 @@
 
 <body>
     <div class="container">
-        <div class="row display-6 text-center"></div>
-        <div class="row">
-            <div class="col">
-                    <input type="text" id="zipBox"></input>
-                zip code bar here
+        <div class="row text-center">Weather App</div>
+            <div class="row">
+                <div class="col">
+                    <input class="form-control" type="text" id="zipBox">
+                </div>
+                <div class="col">
+                    <button id="submitButton" class="btn btn-primary"> Get Weather</button>
+                </div>
             </div>
-            <div class="col">
-                <button id="submitButton"> Get Weather</button>
+        <div class="row" id="errorMsg"> Error - Invalid zip code.</div>
+        <div id="weatherDataDiv">
+            <div class="row">
+                <label class="label">City</label>
+                <input id="cityData" class="input">
             </div>
-            <div class="col">
-                <button id="testHideShow"> Working or not</button>
-            </div>
-        </div>
-        <div class="row" id="errorMsg"> Error Message Here</div>
-        <div class="row border border-danger">City</div>
-        <div class="row border border-danger" id="cityName"></div>
-        
-        <div class="row border border-dark">Temperature</div>
-        <div class="row">
-            <div class="col-4 border border-dark" id ="tempK">Kelvin</div>
-            <div class="col-4 border border-dark" id = "tempF">Farenheit</div>
-            <div class="col-4 border border-dark" id = "tempC">Celcius</div>
-        </div>
-        
-        <div class="row border border-dark">Condition</div>
-        <div class="row border border-dark" id="currentCondition">Light rain</div>
 
-        <div class="row border border-dark">Other Info</div>
-        <div class="row border border-dark">
-            <div class="card">
-                <img src="'link here'" class="card-img" id="conditionImg">
+
+            <div class="row border border-dark">Temperature</div>
+            <div class="row">
+                <div class="col-4 border border-dark" id="tempK">Kelvin</div>
+                <div class="col-4 border border-dark" id="tempF">Farenheit</div>
+                <div class="col-4 border border-dark" id="tempC">Celcius</div>
+            </div>
+
+            <div class="row border border-dark">Condition</div>
+            <div class="row border border-dark" id="currentCondition">Light rain</div>
+
+            <div class="row border border-dark">Other Info</div>
+            <div class="row border border-dark">
+                <div class="card">
+                    <img src="'link here'" class="card-img" id="conditionImg">
+                </div>
             </div>
         </div>
     </div>
 
 
 
-    
+
 
 
 
